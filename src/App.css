@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+
+
+ @import '~mdb-ui-kit/css/mdb.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Open+Sans:wght@300&family=Poppins&display=swap');
+
+* {
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.createBlog_container {
+  width: 80%;
+  margin: .35rem auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: .7rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* =============== blog container =========== */
+
+.card_container {
+  width: 90%;
+  margin: 1rem auto;
+  height: 87vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  overflow-y: scroll;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
+  height: auto;
+  overflow-y: scroll;
+
+}
+
+.blog_card {
+  height: 200px;
+}
+
+/* =============== Error Page ============ */
+
+.error {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+.error_dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ============ Home Page =================== */
+
+.Home_page {
+
+  width: 100%;
+  background-image: url('../public//images/water.gif');
+  height: 91.7vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+/* ============ setting =============== */
+
+.setting {
+  width: 50%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: .7rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 80vh;
+  background-color: gray;
+}
+
+.aboutImg_container {
+  overflow: hidden;
+
+}
+
+.aboutImg {
+  border-radius: .7rem;
+}
+
+.aboutImg:hover {
+  transform: scale(1.1);
+  transition: 1s all linear;
+  border-radius: .7rem;
+  cursor: pointer;
+}
+
+.table {
+  width: 90%;
+  border-radius: .5rem;
+  margin: .2rem auto;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  margin-bottom: 1rem;
+}
+
+.tbody {
+  height: auto;
+}
+
+.col {
+  color: black;
 }
